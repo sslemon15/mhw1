@@ -1,0 +1,417 @@
+
+a.button{
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+.articolo .primo .gold{
+    text-decoration: none;
+    color: rgb(205, 164, 52);
+}
+
+.articolo .primo .grass{
+    font-weight: 400px;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: whitesmoke;
+    
+}
+
+.blocco .articolo h2{
+    text-align: left;
+    margin-bottom: 20px;
+    
+    
+    
+}
+
+.blocco .articolo .primo{
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    
+    
+}
+
+.blocco .articolo .ss{
+    height: 42%;
+    border: 2px solid rgb(205, 164, 52);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    
+
+}
+
+div.container .blocco{
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    width: 100%;
+    
+
+
+}
+div.container .blocco .articolo{
+    
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 66vw;
+    padding: 60px 0 60px 40px;
+    
+    
+    
+    
+}
+
+div.container div.blocco .num{
+    font-size: 2.25rem;
+    font-weight: 400px;
+    color: silver;
+    padding-top: 70px;
+    margin: 0;
+    
+}
+
+header #top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  
+   
+    font-size: 0.875em;
+    padding: 20px;
+  
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+  }
+
+  header{
+    
+    background-image: url(./header.png);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+
+
+
+header #sfondo{
+    text-align: center;
+    z-index: 1;
+    line-height: 3.4rem;
+}
+
+header #sfondo h1{
+    font-size: 2.25rem;
+    font-weight: 400px;
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 20px;
+    line-height: 1.6rem;
+    
+    
+} 
+
+header #sfondo #frase{
+    
+    font-weight: 400;
+    text-align: center;
+    color: aliceblue;
+    font-style: italic;
+    
+   
+}
+
+header #sfondo a.button{
+    background-color:rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+header #sfondo  a.button:hover{
+    background-color:rgb(205, 164, 52);
+    color: black;
+    
+}
+
+
+#links a {
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+  }  
+
+
+
+#links a.button:hover {
+    background-color: white;
+    color: black;
+  } 
+
+
+
+#me{
+    text-align: center;
+    position: relative;
+    
+}
+
+#me .profilo{
+    border-radius: 50%;
+    border: 2px  solid black;
+    height: 100px;
+    width: 110px;
+    margin-top: -50px;
+    
+    
+}
+
+
+
+p.profile{
+    font-style: italic;
+    text-align: center;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: black;
+    border-top: 3px solid rgb(205, 164, 52);
+    color: whitesmoke;
+    padding: 20px 30px;
+    margin: 0;
+
+}   
+
+footer .social-links{
+    display: inline-flex;
+    
+    
+}
+
+
+footer .social-links .icon{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+footer .social-links .icon a{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+
+
+}
+
+footer .social-links .icon a i{
+    font-size: 25px;
+    line-height: 60px;
+
+}
+
+footer .social-links .icon .tooltip{
+    position: absolute;
+    top:0px;
+    background: #fff ;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+
+}
+
+footer .social-links .icon:hover .tooltip{
+    top:-70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+footer .social-links .icon .tooltip::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+
+
+
+}
+
+footer .social-links .icon:hover .tooltip, footer .social-links .icon:hover a{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+
+footer .social-links .facebook:hover a,
+footer .social-links .facebook:hover .tooltip,
+footer .social-links .facebook:hover .tooltip::before{
+    background-color: #3b5999;
+}
+
+footer .social-links .icon:hover a {
+    color:white;
+}
+
+footer .social-links .youtube:hover a,
+footer .social-links .youtube:hover .tooltip,
+footer .social-links .youtube:hover .tooltip::before{
+    background-color: #DE463B;
+}
+
+footer .social-links .linkedin:hover a,
+footer .social-links .linkedin:hover .tooltip,
+footer .social-links .linkedin:hover .tooltip::before{
+    background-color: #46C1F6;
+}
+
+footer address, footer p{
+    line-height: 80px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+
+  @media (max-width: 700px) {
+    header {
+      height: 300px;
+      line-height: 1.2px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    header #sfondo{
+      font-size: 0.7em;
+      letter-spacing: 4px;
+    }
+  }
+
+  #menu {
+    display: none;
+  }
+  
+  #menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 15px;
+  }
+
+  @media (max-width: 700px) {
+    #links {
+      display: none;
+    }
+  
+    #menu {
+      display: block;
+    }
+
+
+}
+
+@media (max-width: 700px) {
+
+    
+    .container .blocco{
+      font-size: 1em;
+      letter-spacing: 2px;
+   
+    }
+
+     header #sfondo a.button{
+        font-size: 0.7rem;
+        margin-bottom: 20px;
+     } 
+    
+     .articolo .primo .grass{
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+
+     }
+
+   
+    header #sfondo #frase{
+        line-height: 1rem;
+        font-size: 0.7rem;
+    }
+    
+    header #sfondo h1{
+        font-size: 1.5rem;
+    }
+
+    
+   
+  }
+  
+  
+        
